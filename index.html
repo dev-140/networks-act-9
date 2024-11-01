@@ -1,9 +1,29 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Visual Graph Dijkstra's Shortest Path</title>
+        <link rel="stylesheet" href="style/style.css" />
+    </head>
+    <body>
+        <div id="graph-container"></div>
+        <div id="controls">
+            <div class="controls-container">
+                <select id="mode-select">
+                    <option value="add-node">Add Node</option>
+                    <option value="add-edge">Add Edge</option>
+                    <option value="select-path">Select Path</option>
+                </select>
+                <button id="clear-btn">Clear Graph</button>
+                <!-- <button id="compute-path-btn">Compute Shortest Path</button> -->
+            </div>
+
+            <div class="result-container">
+                <h1>RESULT:</h1>
+                <div id="result"></div>
+            </div>
+        </div>
+
+        <script src="js/index.js"></script>
+    </body>
 </html>
